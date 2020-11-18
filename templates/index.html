@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="{{ url_for('static', path='/index.js') }}"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <title>Розничный калькулятор Тома</title>
+    <p>Количество товаров</p>
+    <input type="number" id="numberOfGoods" min="0"/><br>
+    <p>Цена за товар.</p>
+    <input type="number" id="pricePerGood" min="0"/><br>
+    <p>Код штата</p>
+    <input type="text" maxlength="2" id="state" /><br>
+    <button onclick="sendForm()">Go</button><br>
+    <p id="result"></p>
+    <p id="error"></p>
+
+</body>
+</html>
